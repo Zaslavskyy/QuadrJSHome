@@ -8,9 +8,18 @@ return result;
 }
 
 const d = calcD(a, b, c);
-alert(d);
+alert("D=" + d);
 
+function solveQuadr3(a, b, c) {
+const D = b * b - 4* a * c;
+if (D == 0) {
+const result = -b / 2 * a;
+return result;
+ }
+}
 
+const X = solveQuadr3(a, b, c);
+alert("x=" + X);
 function solveQuadr(a, b, c) {
 const D = b * b - 4* a * c;
 if (D > 0) {
@@ -19,5 +28,25 @@ return result;
  }
 }
 
-const x = solveQuadr(a, b, c);
-alert(x);
+const x = solveQuadr1(a, b, c);
+alert("x1=" + x);
+
+function solveQuadr1(a, b, c) {
+const D = b * b - 4* a * c;
+if (D > 0) {
+const result = (-b - (Math.sqrt(d)) / 2 * a);
+return result;
+}
+ }
+
+const x2 = solveQuadr1(a, b, c);
+alert("x2=" + x2);
+
+function solveQuadr2(a, b, c) {
+    const D = b * b - 4* a * c;
+if (D < 0) {
+    alert("No results");
+}
+}
+
+
