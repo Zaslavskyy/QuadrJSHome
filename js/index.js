@@ -11,7 +11,7 @@ const d = calcD(a, b, c);
 alert("D=" + d);
 
 function solveQuadr2(a, b, c) {
- if (d > 0) {
+ if (d >= 0) {
   const result = (-b + Math.sqrt(d))/(2*a);
   return result;
  }
@@ -22,7 +22,7 @@ alert("x1=" + x);
 
 function solveQuadr3(a, b, c) {
 
- if (d > 0) {
+ if (d >= 0) {
   const result = (-b - Math.sqrt(d))/(2*a);
   return result;
  }
@@ -36,14 +36,3 @@ function solveQuadr4(a, b, c) {
   alert("No results");
  }
 }
-
-function solveQuadr1(a, b, c) {
-
- if (d == 0) {
-  const result = -b/(2*a);
-  return result;
- }
-}
-
-const X = solveQuadr1(a, b, c);
-alert("x=" + X);
